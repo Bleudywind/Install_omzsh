@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # OMZ path installation
-export ZSH=".oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the themebi to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -71,6 +71,7 @@ ZSH_THEME="bira"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+plugins=(zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -111,10 +112,10 @@ alias gac="git add . && git commit -a -m "
 alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
 alias setcdp='export cdp=$(pwd)'
 alias cdp='cd $cdp'
-alias open='nautilus --browser .'
+alias open='nautilus .'
 alias touchv='foo(){ touch "$1"; vim "$1" }; foo '
 
 #Divers
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias hs='history | grep'
-
+alias vused='sudo du -sh ./*'
