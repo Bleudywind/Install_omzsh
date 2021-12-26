@@ -1,5 +1,7 @@
 zsh --version ||
-      	sudo apt install -y zsh &&
+      	pkg install -y zsh &&
        	chsh -s $(which zsh) &&
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	cp ./.zshrc ~ 
+
+
