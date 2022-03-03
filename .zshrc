@@ -107,7 +107,6 @@ source $ZSH/oh-my-zsh.sh
 alias myip="curl http://ipecho.net/plain; echo"
 
 #Files
-alias ECE='cd ~/Documents/ECE/Ing5'
 alias gac="git add . && git commit -a -m "
 alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
 alias setcdp='export cdp=$(pwd)'
