@@ -107,15 +107,13 @@ source $ZSH/oh-my-zsh.sh
 alias myip="curl http://ipecho.net/plain; echo"
 
 #Files
-alias ECE='cd ~/Documents/ECE/Ing5'
 alias gac="git add . && git commit -a -m "
 alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
 alias setcdp='export cdp=$(pwd)'
 alias cdp='cd $cdp'
-alias open='nautilus .'
 alias touchv='foo(){ touch "$1"; vim "$1" }; foo '
 
 #Divers
-alias update='sudo apt-get update && sudo apt-get upgrade'
+alias update='sudo apt-get update && sudo apt-get upgrade && cd ~/.script/Install_omzsh && git pull && cp .zshrc ../../'
 alias hs='history | grep'
 alias vused='sudo du -sh ./*'
