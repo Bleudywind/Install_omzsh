@@ -115,6 +115,6 @@ alias cdp='cd $cdp'
 alias touchv='foo(){ touch "$1"; vim "$1" }; foo '
 
 #Divers
-alias update='export cdpupdate=$(pwd) && apt-get update && sudo apt-get upgrade && cd ~/.script/Install_omzsh && git pull && cp .zshrc ../../ && cd $cdpupdate'
+alias update='export cdpupdate=$(pwd) && apt-get update && apt-get upgrade && cd ~/.script/Install_omzsh && git pull && cp .zshrc ../../ && cd $cdpupdate'
 alias hs='history | grep'
 alias vused='sudo du -sh ./*'
