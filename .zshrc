@@ -112,8 +112,10 @@ alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
 alias setcdp='export cdp=$(pwd)'
 alias cdp='cd $cdp'
 alias touchv='foo(){ touch "$1"; vim "$1" }; foo '
+alias touchc='foo(){ touch "$1"; code "$1" }; foo '
 
 #Divers
 alias update='export cdpupdate=$(pwd) && sudo apt-get update && sudo apt-get upgrade && cd ~/.script/Install_omzsh && git pull && cp .zshrc ../../ && cd $cdpupdate'
 alias hs='history | grep'
 alias vused='sudo du -sh ./*'
+alias haha='curl -H "Accept: text/plain" https://icanhazdadjoke.com/'
